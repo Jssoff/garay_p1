@@ -32,7 +32,7 @@ export function Persistencia({ children }: { children: ReactNode }) {
 
 
 export const useFavoritos = () => {
-  const ctx = useContext(estadoFavs);
-  if (!ctx) throw new Error('useFavoritos debe usarse dentro del provider');
-  return ctx;
+  const contexto = useContext(estadoFavs);
+  if (!contexto) throw new Error('Error de contexto');
+  return contexto ;
 };
