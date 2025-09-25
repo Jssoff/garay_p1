@@ -2,7 +2,7 @@
 
 import { Episode } from '@/types/interfaces';
 import { useFavoritos } from '@/datos/persistenciaEstado';
-import EpisodeCard from '@/components/ui/Card';
+import Card from '@/components/ui/Card';
 
 export default function Favorites() {
   const { favoritos } = useFavoritos();
@@ -21,7 +21,7 @@ export default function Favorites() {
       </h2>
       <div className="space-y-4">
         {favoritos.map((episode: Episode) => (
-          <EpisodeCard key={episode.id} episodio={episode} />
+          <Card key={episode.id} episodio={episode} />
         ))}
       </div>
     </div>
