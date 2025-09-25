@@ -46,7 +46,7 @@ export default function Home() {
 
           <div className="space-y-6">
             <section className="p-4 bg-[#c8b8db]">
-              <h2 className="text-2xl font-semibold mb-4">Episodios favoritos</h2>
+              <h2 className="text-2xl font-semibold mb-4">Encuentra aquí tus episodios favoritos</h2>
               <Favorites />
             </section>
 
