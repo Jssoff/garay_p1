@@ -51,7 +51,7 @@ export default function Home() {
             </section>
 
             <section className="space-y-4 bg-[#edc5dd] p-4">
-              <h2 className="text-2xl font-semibold mb-4">Formulario</h2>
+              <h2 className="text-2xl font-semibold mb-4">Formulario para crear nuevos capítulos</h2>
               <UserForm onCreateItem={addEpisode} />
             </section>
           </div>
