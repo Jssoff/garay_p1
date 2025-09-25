@@ -14,7 +14,7 @@ const episodeSchema = z.object({
 
 interface FormularioProps {
   onCreateItem: (nuevo: Episode) => void;
-  characterApiBase?: string; // opcional, por si cambias de API
+  characterApiBase?: string; 
 }
 
 export default function Formulario({
@@ -35,8 +35,6 @@ export default function Formulario({
 
     try {
       const fechaCreacion = new Date().toLocaleDateString("es-ES");
-
-      // 1) Split, trim y dedupe de ids (manteniendo como strings)
       const ids = Array.from(
         new Set(
           personajes
