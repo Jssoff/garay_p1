@@ -10,7 +10,7 @@ export default function Favorites() {
   if (favoritos.length === 0) {
     return (
       <div className="p-4 bg-[#c8b8db]">
-        <p className="text-gray-600">Añade todos tus episodios favoritos de Rick y Morty</p>
+        <p className="text-gray-600">¡Añade todos tus episodios favoritos!</p>
       </div>
     );
   }
